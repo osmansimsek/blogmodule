@@ -1,0 +1,36 @@
+{
+  "name": "osmansimsek/blogmodule",
+  "description": "Yii2-blogmodule",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "osmansimsek",
+      "email": "simsekosman15@hotmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "yiisoft/yii2": "~2.0.13"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "8.*.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "osmansimsek\\blogmodule\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "osmansimsek\\blogmodule\\tests\\": "tests"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
