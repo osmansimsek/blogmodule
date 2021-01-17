@@ -25,8 +25,8 @@ class m210116_133721_blogtitles extends Migration
      */
     public function safeDown()
     {
+        $this->dropPrimaryKey('blogtitle_primarykey','blogtitles');
         $this->dropTable('blogtitles');
-        //$this->dropPrimaryKey('blogtitle_primarykey','blogtitles');
     }
 
     /*
