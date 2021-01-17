@@ -37,7 +37,7 @@ class m210116_133731_blogdetails extends Migration
     public function safeDown()
     {
         $this->dropTable('blogdetails');
-        $this->dropForeignKey('blogtitle_relation','blogdetails');
+        //$this->dropForeignKey('blogtitle_relation','blogdetails');
     }
 
     /*
