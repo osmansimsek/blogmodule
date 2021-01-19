@@ -4,6 +4,7 @@
 
 Modülümüz blog eklemek üstüne tasarlanmıştır kullanıcı ilk başta eklemek istediği bloglara ait türler girmesi gerekmektedir.
 Girilen türlerle ilgili blog detaylarını ve yazılarını doldurarak bloglar girebilmektedir.
+Girilen blogları ya da bloglara ait türleri silebilir ya da güncelleyebilmektedir.
 
 # Kurulum
 
@@ -57,15 +58,24 @@ Modülümüzün kurulumunu yaptıktan sonra kullanmak için tarayıcıya giderek
     
 
 Modül **url** üstünden çalıştırıldığı zaman ekrana iki adet buton gelmektedir. Bunlar şöyledir:
+
+![Modül Arayüzü](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Main%20Page.png)
   
-   1) İlk buton olan **'Blog türü ekle'** ile bloglara ait olan türleri girebiliriz. Örneğin kullanıcı seyahat veya sinema gibi konularda blog yazacaksa bunları
-   ilk olarak belirtmesi gerekmektedir. Blog türü eklendikten sonra tabloda eklenilen konu başlığını görebilirsiniz. Blog türünün yan tarafında ise silmek güncellemek ve 
-   görmek için 3 farklı buton mevcuttur. Bunları kullanarak bloglarınız için değişiklik yapabilirsiniz. **'Blog türü ekle'** butonu ile açılan tabloda bloga ait konuyu 
-   girdikten sonra **'Return Main Menu'** butonuna basarak ana menüye dönebilirsiniz.
+## Blog Türü Ekle  
+
+İlk buton olan **'Blog türü ekle'** ile bloglara ait olan türleri girebiliriz. Örneğin kullanıcı seyahat veya sinema gibi konularda blog yazacaksa bunları
+ilk olarak belirtmesi gerekmektedir. Blog türü eklendikten sonra tabloda eklenilen konu başlığını görebilirsiniz. Blog türünün yan tarafında ise silmek güncellemek ve 
+görmek için 3 farklı buton mevcuttur. Bunları kullanarak bloglarınız için değişiklik yapabilirsiniz. **'Blog türü ekle'** butonu ile açılan tabloda bloga ait konuyu 
+girdikten sonra **'Return Main Menu'** butonuna basarak ana menüye dönebilirsiniz.
+  
+## Blog Ekle  
+  
+İkinci buton olan **'Blog Ekle'** butonu ile blog ekleyebileceğimiz bir sayfa karşımıza çıkmaktadır. Bloglarla ilgili yazı ve diğer detaylar burada belirtilmiştir. **'Blog Ekle'** butonuna bastıktan sonra karşımıza çıkan tabloya yeni kayıt girerek blog ekleyebiliriz. Blogtitle kısmında önceden girilmiş konu başlıklarını kullanabiliriz.
+Module eklenmemiş olan konu başlığını yazıp blog eklemeye çalışırsanız geçersiz bir konu başlığı olduğunu size söyleyecektir. Konu başlığı eklemek istediğinizde ise **'Return Main Menu'** butonuna basarak ana menüye gidip **'Blog türü ekle'** deyip o sayfadan istediğiniz bir konu başlığı eklemeniz gerekmektedir. Geçerli konu başlığı ve 
+diğer detaylar eklenilip kaydedildiğine blogumuz kaydedilmiş olur. Tabloda eklenen blogu görebilirsiniz. Blogun yan tarafında ise silmek güncellemek ve görmek için 3
+farklı buton mevcuttur. Bunları kullanarak bloglarınız için değişiklik yapabilirsiniz. Blog girildiği zaman **'Return Main Menu'** butonuna basarak ana menüye dönebilirsiniz.
+
+# Modül ER Diagramı
+
+![Modül ER Diagramı](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/ER.png)
    
-   2) İkinci buton olan **'Blog Ekle'** butonu ile blog ekleyebileceğimiz bir sayfa karşımıza çıkmaktadır. Bloglarla ilgili yazı ve diğer detaylar burada belirtilmiştir.
-   **'Blog Ekle'** butonuna bastıktan sonra karşımıza çıkan tabloya yeni kayıt girerek blog ekleyebiliriz. Blogtitle kısmında önceden girilmiş konu başlıklarını kullanabiliriz.
-   Module eklenmemiş olan konu başlığını yazıp blog eklemeye çalışırsanız geçersiz bir konu başlığı olduğunu size söyleyecektir. Konu başlığı eklemek istediğinizde ise 
-   **'Return Main Menu'** butonuna basarak ana menüye gidip **'Blog türü ekle'** deyip o sayfadan istediğiniz bir konu başlığı eklemeniz gerekmektedir. Geçerli konu başlığı ve 
-   diğer detaylar eklenilip kaydedildiğine blogumuz kaydedilmiş olur. Tabloda eklenen blogu görebilirsiniz. Blogun yan tarafında ise silmek güncellemek ve görmek için 3
-   farklı buton mevcuttur. Bunları kullanarak bloglarınız için değişiklik yapabilirsiniz. Blog girildiği zaman **'Return Main Menu'** butonuna basarak ana menüye dönebilirsiniz.
