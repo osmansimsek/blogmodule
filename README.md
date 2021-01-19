@@ -2,7 +2,7 @@
 
 Blog modülünü kullanmak için ilk olarak vagrant aracılığıyla kurulmuş olan bir makine ve bir domain lazımdır.
 Vagrant ile kurulmuş makineya ssh ile bağlanmamız gerekmektedir.
-Linux makineya girdikten sonrasında makinemızı kurarken verdiğimiz domina ait klasörün buluduğu konuma gitmemiz gerekmektedir.
+Linux makineya girdikten sonrasında makinemızı kurarken verdiğimiz domaine ait klasörün bulunduğu konuma gitmemiz gerekmektedir.
 
     cd /var/www/
     
@@ -28,7 +28,7 @@ Modülümüz için configration ayarları yapmamız gerekmektedir :
   1) İlk olarak proje klasörü içindeyken /backend/config/main.php dosyasına veya /frontend/config/main.php girerek aşağıda bulunan kodları eklememiz gerekmektedir.
   
     // Eğer ki main.php dosyamızın içindeyken 'modules' başlığı altında bir ayar satırı bulunmaktaysa 
-    // aşağıda modules'in içinde bulunan kodları taşımamız yeterli olucaktır.
+    // aşağıda modules'in içinde bulunan kodları taşımamız yeterli olacaktır.
     
     'modules' => [
         'blogmodule' =>[
@@ -40,7 +40,7 @@ Modülümüz için configration ayarları yapmamız gerekmektedir :
   
     php yii migrate/up --migrationPath=@vendor/osmansimsek/blogmodule/src/migrations
    
-Mödülümüzün kurulumunu yaptıktan sonra kullanmak için tarayıcıya giderek url kısmına aşağıda bulunan adresi girmeniz gerekmektedir
+Modülümüzün kurulumunu yaptıktan sonra kullanmak için tarayıcıya giderek url kısmına aşağıda bulunan adresi girmeniz gerekmektedir
 
     // main.php dosyasını backend veya frontend dizinlerinden hangisinde ayarladıysanız
     // o linke ait url adresini kopyalamanız gerekmektedir.
@@ -51,7 +51,7 @@ Mödülümüzün kurulumunu yaptıktan sonra kullanmak için tarayıcıya gidere
 Modülümüz blog eklemek üstüne tasarlanmıştır kullanıcı ilk başta eklemek istediği bloglara ait türler girmesi gerekmektedir.
 Girilen türlerle ilgili blog detaylarını ve yazılarını doldurarak bloglar girebilmektedir.
 
-Mödül url üstünden çalıştırıldığı zaman ekrana iki adet buton gelmektedir. Bunlar şöyledir:
+Modül url üstünden çalıştırıldığı zaman ekrana iki adet buton gelmektedir. Bunlar şöyledir:
   
    1) İlk buton olan 'Blog türü ekle' ile bloglara ait olan türleri girebiliriz. Örneğin kullanıcı seyahat veya sinema gibi konularda blog yazıcaksa bunları
    ilk olarak belirtmesi gerekmektedir. Blog türü eklendikten sonra tabloda eklenilen konu başlığını görebilirsiniz. Blog türünün yan tarafında ise silmek güncellemek ve 
