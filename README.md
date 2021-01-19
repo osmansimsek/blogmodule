@@ -1,14 +1,18 @@
 # blogmodule
 
+#Hakkında
+
+#Kurulum
+
 Blog modülünü kullanmak için ilk olarak vagrant aracılığıyla kurulmuş olan bir makine ve bir domain lazımdır.
-Vagrant ile kurulmuş makineye ssh ile bağlanmamız gerekmektedir.
+Vagrant ile kurulmuş makineye ##ssh ile bağlanmamız gerekmektedir.
 Linux makineye girdikten sonrasında makinemizi kurarken verdiğimiz domaine ait klasörün bulunduğu konuma gitmemiz gerekmektedir.
 
     cd /var/www/
     
-ls komutunu kullandığınız zaman sitemize ait klasörün orda olduğunu görmektesiniz.
+##ls komutunu kullandığınız zaman sitemize ait klasörün orda olduğunu görmektesiniz.
 ilk olarak yii2-advanced proje şablonunu kurmamız gerekmektedir.
-Sitemize ait klasörün boş olduğundan emin olun ve packagist aracılığı ile yii2-advanced proje şablonunu indirmelisiniz.
+Sitemize ait klasörün boş olduğundan emin olun ve ##packagist aracılığı ile ##yii2-advanced proje şablonunu indirmelisiniz.
 
     composer create-project yiisoft/yii2-app-advanced ['Sitenize ait adını giriniz']
 
