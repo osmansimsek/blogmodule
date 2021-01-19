@@ -1,8 +1,8 @@
 # blogmodule
 
-Blog modülünü kullanmak için ilk olarak vagrant aracılığıyla kurulmuş olan bir makina ve bir domain lazımdır.
-Vagrant ile kurulmuş makinaya ssh ile bağlanmamız gerekmektedir.
-Linux makinaya girdikten sonrasında makinamızı kurarken verdiğimiz domina ait klasörün buluduğu konuma gitmemiz gerekmektedir.
+Blog modülünü kullanmak için ilk olarak vagrant aracılığıyla kurulmuş olan bir makine ve bir domain lazımdır.
+Vagrant ile kurulmuş makineya ssh ile bağlanmamız gerekmektedir.
+Linux makineya girdikten sonrasında makinemızı kurarken verdiğimiz domina ait klasörün buluduğu konuma gitmemiz gerekmektedir.
 
     cd /var/www/
     
