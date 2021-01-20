@@ -1,42 +1,24 @@
 # blogmodule
 
 # Hakkında
-
-Modülümüz blog eklemek üstüne tasarlanmıştır kullanıcı ilk başta eklemek istediği bloglara ait türler girmesi gerekmektedir.
+Hazırlanan program bir yii2 modülüdür. Bu modül blog eklemek üstüne tasarlanmıştır.
+Kullanıcı ilk başta eklemek istediği bloglara ait türler girmesi gerekmektedir.
 Girilen türlerle ilgili blog detaylarını ve yazılarını doldurarak bloglar girebilmektedir.
-Girilen blogları ya da bloglara ait türleri silebilir ya da güncelleyebilmektedir.
+Girilen blogları ya da bloglara ait türleri silebilmekte ya da güncelleyebilmektedir.
 
 # Kurulum
 
-Blog modülünü kullanmak için ilk olarak vagrant aracılığıyla kurulmuş olan bir makine ve bir domain lazımdır.
-Vagrant ile kurulmuş makineye **ssh** ile bağlanmamız gerekmektedir.
-Linux makineye girdikten sonrasında makinemizi kurarken verdiğimiz domaine ait klasörün bulunduğu konuma gitmemiz gerekmektedir.
+Modülü kullanmak için ilk olarak **Yii2** projesinin bilgisayarınıza kurulu olması gerekmektedir.  Yii2 projenizin bulunduğu dizine gidip "**composer**" aracıyla modülü gerekli paket olarak ekleyin. Bunun için aşağıdaki komutu kullanın.
 
-    cd /var/www/
-    
-##ls komutunu kullandığınız zaman sitemize ait klasörün orda olduğunu görmektesiniz.
-ilk olarak yii2-advanced proje şablonunu kurmamız gerekmektedir.
-Sitemize ait klasörün boş olduğundan emin olun ve **packagist** aracılığı ile **yii2-advanced** proje şablonunu indirmelisiniz.
-
-    composer create-project yiisoft/yii2-app-advanced ['Sitenize ait adını giriniz']
-
-yii2-advanced proje şablonunu kurduktan sonra klasörün içine girmeniz gerekmektedir.
-
-    cd ['Sitenize ait klasörün adı']
-    
-Blog modulünü kullanmak için ilk önce packagistten **composer** aracılığı ile sitenizin bulunduğu yere dosyaları indirmeniz gerekmektedir.
- 
     composer require osmansimsek/blogmodule "dev-main"
+	 
+Composer komutunu çalıştırdıktan sonra **vendor** altında **osmansimsek** klasörü arasında modüle ait klasör oluşmaktadır.
 
-komutunu projenizin dosyalarının olduğu yerde terminalde çalıştırmamız gerekmektedir.
-Packagist komutunu çalıştırdıktan sonra **vendor** altında **osmansimsek** klasörü arasında modüle ait klasör oluşmaktadır.
-
-Modülümüz için **configration** ayarları yapmamız gerekmektedir :
+Modülümüz için **Konfigüre** ayarları yapmamız gerekmektedir :
   
-  1) İlk olarak proje klasörü içindeyken **/backend/config/main.php** dosyasına veya **/frontend/config/main.php** girerek aşağıda bulunan kodları eklememiz gerekmektedir.
+  1) İlk olarak proje klasörü içindeyken **/backend/config/main.php** dosyasına veya **/frontend/config/main.php** dosyasına girerek aşağıda bulunan kodları eklememiz gerekmektedir.
   
-    // Eğer ki main.php dosyamızın içindeyken 'modules' başlığı altında bir ayar satırı bulunmaktaysa 
-    // aşağıda modules'in içinde bulunan kodları taşımamız yeterli olacaktır.
+     Eğer ki main.php dosyamızın içindeyken 'modules' başlığı altında bir ayar satırı bulunmaktaysa aşağıda modules'in içinde bulunan kodları taşımamız yeterli olacaktır.
     
     'modules' => [
         'blogmodule' =>[
@@ -44,22 +26,25 @@ Modülümüz için **configration** ayarları yapmamız gerekmektedir :
         ]
     ],
     
-  2) Projenizin ana dizinine giderek aşağıda bulunan kodları çalıştırmamız gerekmektedir.
+  2) Modülün konfigüre ayarlarını yaptıktan sonra modülde var olan tabloları oluşturmamız için aşağıda bulunan kodları çalıştırmamız gerekmektedir.
   
     php yii migrate/up --migrationPath=@vendor/osmansimsek/blogmodule/src/migrations
    
-Modülümüzün kurulumunu yaptıktan sonra kullanmak için tarayıcıya giderek **url** kısmına aşağıda bulunan adresi girmeniz gerekmektedir
+Modülümüzün kurulumunu tamamladıktan sonra kullanmak için tarayıcıya giderek **url** kısmına aşağıda bulunan adresi girmeniz gerekmektedir.
 
-    // main.php dosyasını backend veya frontend dizinlerinden hangisinde ayarladıysanız
-    // o linke ait url adresini kopyalamanız gerekmektedir.
+   **main.php** dosyasını **backend** veya **frontend** dizinlerinden hangisinde ayarladıysanız o linke ait **url** adresini kopyalamanız gerekmektedir.
     
-    http://blogmodule/backend/web/index.php?r=blogmodule/home/index.php
-    http://blogmodule/backend/web/index.php?r=blogmodule/home/index.php
+    Frontend : http://blogmodule/frontend/web/index.php?r=blogmodule/home/index.php
+    Backend : http://blogmodule/backend/web/index.php?r=blogmodule/home/index.php
     
+adreslerinden modülü çalıştırabilirsiniz.
 
-Modül **url** üstünden çalıştırıldığı zaman ekrana iki adet buton gelmektedir. Bunlar şöyledir:
+# Modül Kullanımı
 
-![Modül Arayüzü](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Main%20Page.png)
+Yukarıda verilen adresler üstünden projenin içine kurulan modülü çalıştırdığınız zaman ekrana iki adet buton gelmektedir. 
+
+![Main Menü](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Main%20Page.png)
+
   
 ## Blog Türü Ekle  
 
@@ -77,5 +62,4 @@ farklı buton mevcuttur. Bunları kullanarak bloglarınız için değişiklik ya
 
 # Modül ER Diagramı
 
-![Modül ER Diagramı](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/ER.png)
    
