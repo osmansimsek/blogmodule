@@ -1,7 +1,5 @@
 # blogmodule
 
-# blogmodule
-
 # Hakkında
 Hazırlanan program bir yii2 modülüdür. Bu modül blog eklemek üstüne tasarlanmıştır.
 Kullanıcı ilk başta eklemek istediği bloglara ait konular girmesi gerekmektedir.
