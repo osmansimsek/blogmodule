@@ -52,6 +52,7 @@ Bu butona tıklanıldığı zaman veri tabanına kaydedilmiş olan bloglara ait 
 ![Blog title page](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Blogtitlepage.PNG)
 
 **"Return Main Menu"** butonuna tıkladığınız zaman ana menüye tekrar dönebilirsiniz.
+
 **"Create"** butonu ile bloglara ait konular girebilirsiniz.
 
 ![Blog title create page](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Blogtitlecreatepage.PNG)
