@@ -1,5 +1,7 @@
 # blogmodule
 
+# blogmodule
+
 # Hakkında
 Hazırlanan program bir yii2 modülüdür. Bu modül blog eklemek üstüne tasarlanmıştır.
 Kullanıcı ilk başta eklemek istediği bloglara ait konular girmesi gerekmektedir.
@@ -51,6 +53,8 @@ Bu butona tıklanıldığı zaman veri tabanına kaydedilmiş olan bloglara ait 
 
 ![Blog title page](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Blogtitlepage.PNG)
 
+Tabloda girilen bloglara ait türlerin yanlarında bulunan işaretlerden güncelleme, silme ve görüntüleme gibi işlemler yapabilirsiniz.
+
 **"Return Main Menu"** butonuna tıkladığınız zaman ana menüye tekrar dönebilirsiniz.
 
 **"Create"** butonu ile bloglara ait konular girebilirsiniz.
@@ -58,6 +62,21 @@ Bu butona tıklanıldığı zaman veri tabanına kaydedilmiş olan bloglara ait 
 ![Blog title create page](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Blogtitlecreatepage.PNG)
 
 >  -  Blog Ekle
+  
+Bu butona tıklanıldığı zaman veri tabanına kaydedilmiş olan blogları konu başlıklarıyla ve diğer detaylarıyla görüntülenir.
 
+![Blog details page](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Blogdetailspage.PNG)
+
+Tabloda girilen blogların ve detaylarının yanlarında bulunan işaretlerden güncelleme, silme ve görüntüleme gibi işlemler yapabilirsiniz.
+
+**"Return Main Menu"**  butonuna tıkladığınız zaman ana menüye tekrar dönebilirsiniz.
+
+**"Create"**  butonu ile veri tabanında kayıtlı olan konu başlıklarını kullanarak bloglar girebilirsiniz. Veri tabanında bulunmayan bir konu başlığıyla blog oluşturmak isterseniz hata ile karşılaşabilirsiniz.
+
+![Blog details create page](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/Blogdetailscreatepage.PNG)
+
+ # Modül ER Diagramı
+
+![Modül ER Diagramı](https://github.com/osmansimsek/blogmodule/blob/main/Project%20%C4%B0mage/ER.png)
 
    
